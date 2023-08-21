@@ -34,41 +34,71 @@ main {
   width: 80%;
   margin: auto;
 }
+
 header .inner {
   text-align: center;
   padding: 1vw;
 }
-header .inner [alt="Profile"]{
-  border-radius: 10000px;
-  width: 100px;
+
+header .inner [alt="Profile"] {
+  width: 100%;
 }
-header .inner [alt="Share"]{
+
+header .inner [alt="Share"] {
   position: absolute;
   top: 4%;
   right: 4%;
 }
-header h3{
+
+header .inner .img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 10000px;
+  overflow: hidden;
+}
+
+header .inner .img .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+header .inner .img .overlay.show {
+  display: flex;
+}
+
+header h3 {
   text-align: center;
 }
 
-.links{
+.links {
   padding: 1vw;
   /* outline: 2px solid black; */
 }
-.links div{
+
+.links div {
   background-color: #ccc;
   padding: .8vw;
   margin-block: 20px;
   text-align: center;
 }
-.links div a{
+
+.links div a {
   color: black;
   font-weight: 700;
   font-size: 20px;
 }
-.socials{
+
+.socials {
   gap: 10px;
 }
-.socials a{
+
+.socials a {
   font-size: 25px;
 }
